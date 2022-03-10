@@ -2,7 +2,7 @@
 
 ## marelles
 
-*  [marelle](https://karuuchan.github.io/mallein-gerin_carla)
+*  [marelle](./marelle.html)
 *
 *
 
