@@ -9,7 +9,7 @@
 
   <body>
 
-    <a-scene>
+    <a-scene light="defaultLightsEnabled: false">
       <a-assets>
         <img id="skyTexture" src="./assets/images/er.jpg">
       </a-assets>
@@ -35,6 +35,11 @@
       <a-plane depth="-1" width="0.5" height="0.5" position="2.706 1.49 0.547" rotation="0 170.7 0" src="./assets/images/success.jpg"></a-plane>
       
       <a-sky src="#skyTexture"></a-sky>
+
+      <a-entity light="type: directional; color: #ffffff; intensity: 1.5" 
+                  position="-0.14 0.99 0.359" rotation="0 -0.19 0"></a-entity>
+
+      
 
     </a-scene>
 
