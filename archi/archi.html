@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene light="defaultLightsEnabled: false" background="color: #154360">
+
+        <a-assets>
+            <a-asset-item id="agathe-obj" src="./archi/assets/agathe.obj"></a-asset-item>
+            <a-asset-item id="agathe-mtl" src="./archi/assets/agathe.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-entity obj-model="obj: #agathe-obj; mtl: #agathe-mtl" position="0 0 -4" scale="20 20 20"></a-entity>
+
+        <a-light type="spot" position="-1.26 4.182 15.82" rotation="-9.15 0 0" color=#441d09 intensity="1"
+                  angle="20" penumbra="0.4"> 
+        </a-light>
+
+        <a-light type="hemisphere" position="2.799 5.434 15.33" rotation="0 0 -31.30" color=#575794 scale="2.322 1 -2.363" intensity="1"
+                  angle="20" penumbra="0.4">
+        </a-light>
+
+        <a-light type="spot" position="-1.26 -3.62 -32.6" rotation="3.771 180 180" color=#040d1b intensity="1"
+                  angle="20" penumbra="0.4"> 
+        </a-light>
+
+        <a-light type="directional" position="-3.73 5.39 -19.45" rotation="0 0 -31.30" color=#090901 scale="2.322 1 -2.363" intensity="1"
+                  angle="20" penumbra="0.4">
+        </a-light>
+
+    </a-scene>
+</body>
+
+</html>
